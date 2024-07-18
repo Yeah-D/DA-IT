@@ -1,0 +1,281 @@
+body {
+  font-family: Pretendard;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* 추가: 컬럼 방향으로 배치 */
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bar {
+  margin-right: 1px;
+  display: flex;
+  background-color: #ffffff;
+  width: 1444px;
+  height: 95px;
+  order: -1;
+}
+
+.logo {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 95px;
+  width: 160px;
+  height: 38.135px;
+}
+
+.bar1 {
+  display: flex;
+  margin-top: 37.5px;
+  color: #202020;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.bar2 {
+  display: flex;
+  margin-top: 37.5px;
+  color: #202020;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.bar1:hover,
+.bar2:hover {
+  color: #ff833e;
+}
+
+.login {
+  margin-top: 20px;
+  margin-left: 825px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 815px;
+  background: #f6f6f6;
+}
+
+.text {
+  display: flex;
+  margin-right: 1060px;
+  padding-top: 3px;
+  color: #616161;
+  font-family: Pretendard;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 200px;
+}
+
+.select {
+  display: flex;
+  margin-left: -3px;
+  width: 1267px;
+  height: 62px;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sel1,
+.sel2,
+.sel3,
+.sel4,
+.sel5 {
+  margin-top: 19.8px;
+  margin-left: 30px;
+  color: #8c8c8c;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.sel1:hover,
+.sel2:hover,
+.sel3:hover,
+.sel4:hover,
+.sel5:hover {
+  color: #202020;
+  font-weight: bold;
+}
+
+.calendar-container {
+  display: flex;
+  width: 1272px;
+  height: 780px;
+}
+
+.calendar {
+  flex-direction: column;
+  margin-top: 10px;
+  display: flex;
+  width: 1008px;
+  height: 650px;
+  border-radius: 12px;
+  border: 1.3px solid #e2e2e2;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.months {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+#month {
+  text-align: center;
+  color: #202020;
+  font-family: Pretendard;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#prevMonth {
+  background: #e8e8e8;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 28.993px;
+  height: 31.593px;
+  color: #a3a3a3;
+  stroke-width: 1px;
+  border-radius: 8px;
+  margin-left: 400px;
+}
+
+#nextMonth {
+  background: #e8e8e8;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 28.993px;
+  height: 31.593px;
+  color: #a3a3a3;
+  stroke-width: 1px;
+  border-radius: 8px;
+  margin-right: 400px;
+}
+
+#prevMonth:hover,
+#nextMonth:hover {
+  background: #ff833e; /* 주황색 배경으로 변경 */
+  color: white; /* 흰색 텍스트로 변경 */
+}
+
+.days {
+  margin-left: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 873.5px;
+  height: 45px;
+  border-radius: 12px 12px 0px 0px;
+  border-top: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1;
+  background: #f1f1f1;
+}
+
+.day {
+  padding-left: 55px;
+  width: calc(100% / 7);
+  height: 16px;
+  color: #202020;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 125px);
+  gap: 0;
+}
+
+.date {
+  margin-left: 60px;
+  width: 125px;
+  /* 수정: 날짜 칸의 너비를 134px로 설정 */
+  height: 80px;
+  /* 추가: 날짜 칸의 높이를 106px로 설정 */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #c1c1c1;
+  cursor: pointer;
+}
+
+.schedule {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  /* 세로 방향으로 배치 */
+  align-items: center;
+  /* 가운데 정렬 */
+  width: 247px;
+  height: 650px;
+  border-radius: 12px;
+  border: 1.3px solid #e2e2e2;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#selectedDate {
+  margin-top: 28px;
+  width: 100%;
+  /* 날짜를 가득 채우도록 설정 */
+  text-align: center;
+  /* 가운데 정렬 */
+  color: #202020;
+  font-family: Pretendard;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+  /* 날짜와 내용 간의 간격을 조절 */
+}
+
+#scheduleContent {
+}
+
+.date:nth-child(7n + 1) {
+  color: #ff5858;
+}
+
+.date:nth-child(7n) {
+  color: #0066cc;
+}

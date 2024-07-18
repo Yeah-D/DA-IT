@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DA_IT</title>
+    <link rel="stylesheet" href="/static/css/calendar/calendar.css" />
+  </head>
+
+  <body>
+    <div class="bar">
+      <img src="/static/image/calendar/DA_IT.svg" alt="da_it" class="logo" />
+      <h2 class="bar1">캘린더</h2>
+      <h2 class="bar2">회고록</h2>
+      <a href="/templates/login/log.html">
+        <img
+          src="/static/image/calendar/login_mark.svg"
+          alt="login_mark"
+          class="login"
+        />
+      </a>
+    </div>
+
+    <div class="content">
+      <h2 class="text">개발 컨퍼런스 일정</h2>
+
+      <div class="select">
+        <h2 class="sel1">전체</h2>
+        <h2 class="sel2">세미나/웨비나</h2>
+        <h2 class="sel3">컨퍼런스</h2>
+        <h2 class="sel4">경진대회</h2>
+        <h2 class="sel5">그 외</h2>
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar">
+          <div class="months">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="month"></h2>
+            <button id="nextMonth">&gt;</button>
+          </div>
+          <div class="days">
+            <div class="day">일</div>
+            <div class="day">월</div>
+            <div class="day">화</div>
+            <div class="day">수</div>
+            <div class="day">목</div>
+            <div class="day">금</div>
+            <div class="day">토</div>
+          </div>
+          <div class="dates" id="dates"></div>
+        </div>
+
+        <div class="schedule">
+          <h2 id="selectedDate">일정</h2>
+          <div id="scheduleContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/js/calendar/calendar.js"></script>
+  </body>
+</html>

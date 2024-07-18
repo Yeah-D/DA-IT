@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DA_IT</title>
+    <link rel="stylesheet" href="/static/css/login/newaccount2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/static/image/login/log2.svg" alt="login-logo" class="logo" />
+      <div class="box">
+        <div class="ment">이메일로 전송된 인증코드를 입력해주세요</div>
+
+        <!-- 시간 표시 요소 -->
+        <div id="clock" class="time">05:00</div>
+
+        <form>
+          <div class="input-container">
+            <input type="text" name="email" class="id" />
+          </div>
+
+          <div class="links">
+            <a href="#">이메일이 오지 않았나요?</a>
+            <span class="divider-text"></span>
+            <a href="#">재전송하기</a>
+          </div>
+
+          <input type="submit" value="인증완료" class="submit-btn" disabled />
+          <!-- 버튼 비활성화 -->
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/login/newaccount2.js"></script>
+  </body>
+</html>
